@@ -1,0 +1,27 @@
+---Bash-cmd---
+
+
+1.pwd -path of working dir
+
+2.cd - change dir , cd .. 2 steps back to 
+
+3.dir- directory
+
+4 ls -list of files in dir
+
+5.mkdir - make new folders
+
+6.touch index.html  - make new file
+
+7.cat  - to read the 📂 files only display thr contents 
+
+
+8.vi index.html , to edit-i-insert, to save and exit- esc-btn && : && wq!  - used to edit the file 
+
+9.mv :moving files,folder from one to another place - mv movingfilename newfilename/
+
+10.cp : copy past file or folder  we have use -r flag for moving folder to another folder-  cp -r folder1 folder/
+
+
+11:  node: for writing js in cmd , node filename : for running file
+

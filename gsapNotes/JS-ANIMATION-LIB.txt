@@ -1,0 +1,129 @@
+//JS-ANIMATION-LIB
+
+
+//GSAP--------------------------1---✔️
+//LOCOMATIVE.JS-----------------2
+//SWIPER.JS---------------------3---✔️
+
+
+
+
+////////////////////////////////////////////////--------------GSAP-ANIMAION-LIB-------------///////////////////////////////////////////////////
+1.
+ gsap.to(".img1", {
+        delay: 0.3,
+        opacity: 0,     -----------animation starts from starting point to end point---------
+        y: 40,             
+      });
+
+
+2. gsap.from(".img1", {
+        delay: 0.3,          -----------animation starts from end point to starting point---------
+        opacity: 0,
+        y: 40,
+      });
+
+3.gsap.from(".page2 h3, .page2 p, .page2 h5", -----------selecting multiple element's at same time
+
+
+
+4. gsap.fromTo(
+        ".bouncingball",
+        {
+          y: 0,
+          width: "90px",
+        },
+        {                       --------------------fromto 
+          y: -250,
+          width: "100px",
+          duration: 1.5,
+          ease: "bounce.in",
+        }
+      );
+
+
+
+
+5. gsap.to(".page3", {
+        x: "-60%",
+        scrollTrigger: {
+          trigger: ".page3",
+          scroller: "body",    --------------------------scroll-trigger
+          start: "top 1%",
+          end: "top -80%",
+          markers: true, 
+          scrub: 2,   ------------------ smoothness of animation
+          pin: true, ---------------pin the current page,container,until animation competed 
+        },
+      });
+
+
+6.gsap.to(window, { duration: 2, scrollTo: { y: "#someID", offsetY: 50 } });------scrollTo
+
+
+7. var tl = gsap.timeline({ repeat: -1, yoyo: true });  -----time-line -executes animation in order
+
+ tl.fromTo(
+        ".bouncingball",
+        {
+          y: 0,
+          width: "90px",
+        },
+        {
+          y: -250,
+          width: "100px",---------------------1st animation
+          duration: 1.5,
+          ease: "bounce.in",
+        }
+      );
+
+      tl.to(".bouncingball", {
+        scale: 40,
+        duration: 1,   ---------------------2st animation
+        ease: "slow(0.1,0.1,false)",
+      });
+
+
+8.gsap.registerPlugin(Draggable, InertiaPlugin);
+
+Draggable.create(".flair--1", {
+  type: "x",
+  bounds: ".container"
+});
+
+Draggable.create(".flair--3", {
+  type: "rotation",
+  inertia: true
+});
+
+Draggable.create(".flair--2", {
+  bounds: ".container",
+  inertia: true
+});
+
+
+
+9.gsap.to(yourElement, {
+  duration: 1,
+  text: {
+    value: "Your new text",-----------------------text-animation
+    newClass: "class2",
+    delimiter: " ",
+  },
+});
+
+
+
+
+
+
+
+
+
+///////////////////////------------------------------LOCOMATIVE.JS-----------------------------------////////////////////////////////
+
+
+
+
+
+

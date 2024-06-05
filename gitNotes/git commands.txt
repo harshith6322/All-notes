@@ -1,0 +1,80 @@
+git commands or https://github.com/joshnh/Git-Commands---all-COMMANDS
+
+//git-bsaic------------------------------------------------------------------------
+
+*git config --global user.name "harshithreddy6322"
+*git config --global user.email "harshithreddy6322gmail.com"
+
+1.npm install git ---- to install git 
+
+2. git -v          ---to know version
+
+3.git init          
+
+4.git add <filename> -a or -all
+   git li
+
+
+5.git commit -m "first commit"
+
+  .git status
+  .git log
+  .git rm -r [file-name.txt]	Remove a file (or folder) in commit stage
+
+
+//git-branch--------------------------------------------------------------------------
+
+1.git branch	List all branches (the asterisk denotes the current branch)
+
+2.git branch -a	List all branches (local and remote)
+
+3.git branch [branch name]------Create a new branch
+4.git branch -d [branch name]----Delete a branch locally
+5.git push origin --delete [branch name]-----Delete a remote branch
+
+6.git switch(or)checkout {-d create new one} <Branch-name> ------change branch or create one switch to it
+7.git checkout -b [branch name] origin/[branch name]-------------Clone a remote branch and switch to it
+
+8.git merge <branch-name>
+
+9.git branch -d <branch-name>  --delete-branch
+
+10.git reset --remove commited stage
+
+11.git remote add origin url
+
+12 git push -u origin main
+
+
+
+
+/// how to add file or folder to repo aleady exsit 
+
+1.git clone <repo-link>
+2.add , commit ,git push origin main
+
+
+
+
+/// how to grt verify or  signatures label in gitHub using the gpg4win it an free software to manage keys
+
+ key-password = 6322 for gpg4win 
+
+git config --global --list to list git config files
+
+1.gpg --full-generate-key      ---in cmd run this commands
+2.choose option 
+3.gpg --list-secret-keys --keyid-format LONG    ---it wil give id DC9C7E8FA880B4B3 copy it
+4.gpg --armor --export <your-key-id>--> DC9C7E8FA880B4B3   ---it will give an publick key very long copy and past it in github keys
+
+
+5.git config --global user.name "harshithreddy6322"
+6. git config --global user.email "harshithreddy6322gmail.com"
+7.git config --global user.signingkey DC9C7E8FA880B4B3            ---change to your key
+8. git config --global commit.gpgsign true                       ---tell git to verify my every commit push to github
+9. git config --global tag.gpgsign true                             ---same for tag
+
+10. in cmd write this command "where gpg" --C:\Program Files (x86)\GnuPG\bin\gpg.exe -- it will give location copy it 
+11.git config --global gpg.program "C:\Program Files (x86)\GnuPG\bin\gpg.exe" --it will add gpg file to git 
+
+---------------------done-------
