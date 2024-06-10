@@ -1,0 +1,306 @@
+TailwindCss------------------------------------------
+
+1.it is an css A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+
+-----Stater----
+
+1.how to download tail-css using npm here so many ways to download tail-css let see for only REACT.JS,VITE_REACT.JS
+
+****Vite-React-js*****
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+****React-js*****
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+
+2.in both we have to change config file little bit
+
+----------------------------------------------------------------coustam-------------------------------
+
+1. Arbitrary values = we can write coutam css value by like this text-[20px],text-[color],tracking-[1rem] by using [] this brackets
+
+
+2.t-top, r-right , b- bottom , l-left
+
+
+
+
+-------------------------------------------------------------TEXT---------------------------------------
+
+1.text-color-50to950--major-colors-are = (Slate,gray,Stone)=white to black, red,orange,amber,yellow,lime,green,sky,blue,indego,purple,pink,rose
+    for-more-colors =https://tailwindcss.com/docs/customizing-colors
+
+2.font-size = text-xs,sm,base,lg,xl,2xl to 9xl
+
+3.text-align = text-left,right,center,justify,start,end
+
+4.text-tranform = uppercase,lowercase,capitalize,normal-case	
+
+5.letter-spacing = tracking-tighter,tight,normal,wide,wider,widest
+
+6.font-wight = font-thin,font-extralight,font-light,font-normal,font-medium.font-semiboldfont-bold,font-extrabold,font-black
+
+	
+
+7. font-sans	font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-serif	font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+font-mono	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+
+
+-----------------------------------------BOX-MODEL-------padding,margin,border,content--------------------------------------
+
+1.margin = m-0 , mx-0 , my-0 , 	ml,mt,mr,mb
+
+2.Padding = p-0 , px-0 , py-0 , pl,pt,pr,pb
+
+3.Border = border -- border-width: 1px; ---> border-x-2to8 , border-y-0 , border-t,r,b,l-2to8
+       
+   border-radius = rounded, rounded-md, rounded-lg, rounded-full -> used for buttons ,
+   border-radius-top = rounded-t-lg, rounded-r-lg, rounded-b-lg, rounded-l-lg,
+   boeder-radius-topleft = rounded-tl-*, rounded-tr-*, rounded-br-*, and rounded-bl-*
+
+4.Space Between = space-x-*, space-y-*
+
+
+5.Width = w-0, w-px, w-0.5, w-1 to w-96, w-auto, w-full, w-screen
+
+6.Hight = h-0, h-px, h-0.5, h-1 to h-96, h-auto, h-1/2 to h-5/6, h-full, h-screen,
+
+
+-----Display----
+
+display = block, inline-block, inline, flex, grid, inline-grid, contents, hidden,none
+
+
+---box-model---
+
+1. box-border = box-sizing: border-box;
+2. box-content = box-sizing: content-box;
+
+
+
+
+---------------------------------Responsive Design---------------------------------------------------------------------
+
+***tailwind is an mobile first approach all class was written will apply for all screen sizes***
+
+1.we have to include below code in index.html for fully responsiveness 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+Breakpoint prefix	Minimum width	CSS
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... }
+
+
+
+min-width----- or min-hight
+
+1. min-w-0 to min-w-96  = min-width: 0px; to min-width: 24rem; /* 384px */
+2. min-w-full	min-width: 100%;
+
+max-width-----or min-hight
+
+1. max-w-0 to min-w-96  = max-width: 0px; to max-width: 24rem; /* 384px */
+2. max-w-full	max-width: 100%;
+
+
+
+
+--------------------------------------------Layouts---flex,grid---------------------------------------------------------------------
+
+
+
+1.Display-flex = flex, inline-flex
+
+2.Flex-direction = flex-row, flex-row-reverse, flex-col, flex-col-reverse
+
+3. flex-wrap = flex-wrap, flex-wrap-reverse, flex-nowrap
+
+4.justify-content = justify-start, justify-end, justify-center, justify-between, justify-around, justify-evenly
+
+5.align-items = items-start, items-end, items-center, items-baseline, items-stretch
+
+6.align-content = content-start, content-end, content-center, content-between, content-around, content-evenly
+
+7.align-self = self-auto, self-start, self-end, self-center, self-stretch, self-baseline
+
+8.flex-grow = flex-grow-0, flex-grow
+
+9.flex-shrink= flex-shrink-0, flex-shrink
+
+10.order = order-first, order-last, order-none, order-1 to order-12
+
+
+
+-----Grid------
+For CSS Grid properties, here's a breakdown similar to the Flexbox properties you listed:
+
+Sure, here is the updated Tailwind CSS syntax in a single list for easy reading:
+
+grid = display: grid;
+inline-grid = display: inline-grid;
+
+grid-cols-{n} = grid-template-columns: repeat({n}, minmax(0, 1fr));
+grid-rows-{n} = grid-template-rows: repeat({n}, minmax(0, 1fr));
+
+gap-x-{n} = column-gap: {n};
+gap-y-{n} = row-gap: {n};
+gap-{n} = gap: {n};
+
+justify-items-{start|end|center|stretch} = justify-items: {start|end|center|stretch};
+justify-{start|end|center|between|around|evenly} = justify-content: {start|end|center|between|around|evenly};
+
+items-{start|end|center|baseline|stretch} = align-items: {start|end|center|baseline|stretch};
+content-{start|end|center|between|around|stretch} = align-content: {start|end|center|between|around|stretch};
+
+self-{auto|start|end|center|stretch} = align-self: {auto|start|end|center|stretch};
+
+justify-self-{auto|start|end|center|stretch} = justify-self: {auto|start|end|center|stretch};
+
+col-span-{n} = grid-column: span {n} / span {n};
+row-span-{n} = grid-row: span {n} / span {n};
+
+auto-cols-{value} = grid-auto-columns: {value};
+auto-rows-{value} = grid-auto-rows: {value};
+
+auto-flow-{direction} = grid-auto-flow: {direction};
+
+col-start-{line} = grid-column-start: {line};
+col-end-{line} = grid-column-end: {line};
+row-start-{line} = grid-row-start: {line};
+row-end-{line} = grid-row-end: {line};
+
+gap-x-{size} = column-gap: {size};
+gap-y-{size} = row-gap: {size};
+
+place-content-{start|end|center|between|around|evenly|stretch} = place-content: {start|end|center|between|around|evenly|stretch};
+place-items-{start|end|center|stretch} = place-items: {start|end|center|stretch};
+
+place-self-{auto|start|end|center|stretch} = place-self: {auto|start|end|center|stretch};
+
+
+
+--------postion-------
+
+static = position: static;
+fixed = position: fixed;
+absolute = position: absolute;
+relative = position: relative;
+sticky = position: sticky;
+
+
+
+inset-0 = inset: 0px;
+inset-x-0 = left: 0px; right: 0px;
+inset-y-0 = top: 0px; bottom: 0px;
+start-0 = inset-inline-start: 0px;
+end-0 = inset-inline-end: 0px;
+top-0 = top: 0px;
+right-0 = right: 0px;
+bottom-0 = bottom: 0px;
+left-0 = left: 0px;
+
+
+z-0 = z-index: 0;
+z-10 = z-index: 10;
+z-20 = z-index: 20;
+z-30 = z-index: 30;
+z-40 = z-index: 40;
+z-50 = z-index: 50;
+z-auto = z-index: auto;
+
+
+
+
+
+----------------Overflow---------------------
+
+overflow-auto = overflow: auto;
+
+overflow-hidden = overflow: hidden;
+
+overflow-visible = overflow: visible;
+
+overflow-scroll = overflow: scroll;
+
+overflow-x-auto = overflow-x: auto;
+overflow-y-auto = overflow-y: auto;
+
+overflow-x-hidden = overflow-x: hidden;
+overflow-y-visible = overflow-y: visible;
+
+overflow-x-scroll = overflow-x: scroll;
+overflow-y-scroll = overflow-y: scroll;
+
+
+------------------------------------------------pesudo-class----visability-------------------
+1.pesudo_class
+
+Pseudo-classes, like :hover, :focus, :first-child, and :required
+Pseudo-elements, like ::before, ::after, ::placeholder, and ::selection
+
+2.Form states
+Style form elements in different states using modifiers like required, invalid, and disabled:
+
+1.visability
+
+visible	 = visibility: visible;
+invisible = visibility: hidden;
+collapse = visibility: collapse;
+
+2.Changing an element’s opacity
+Use the opacity-* utilities to control the opacity of an element.
+
+
+
+---------------------------------------------------------Tailwind.css own features ------------------------------------------
+
+
+1. Using CSS and @layer
+    When you need to add truly custom CSS rules to a Tailwind project, the easiest approach is to just add the custom CSS to your stylesheet:
+
+
+
+syntax: @layer components {
+  .my-custom-style {
+    /* ... */
+    
+   .btn{
+@apply(any thing    ---------we can resue this class in react.js)
+}
+
+  }----------------------we should not use this can be used some time only and we have resuse compoent in react it is better way
+}
+
+
+
+we can use .theme in coutam css to use tailwind proprty in css file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
