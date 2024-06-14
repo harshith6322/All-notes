@@ -1,0 +1,64 @@
+-----------------------------------------------------------6-Monthes-MERAN-STACK-Dev-------------
+
+
+
+
+-------------------FRONT-END----------------
+
+1.HTML
+
+2.CSS----LIB 1.SASS,(2.BOOTSTRAP5--optional),3.TWAILWIND,.4 material ui 
+     ----gsap for animation lib
+
+3.JS--DOM--ASYN,AWAIT-OOPS--API
+
+4REACT.JS--LIB 1.NEXT.JS
+
+5.PROJECTS,SOME LIB FOR FRONTEnd 
+
+6.GIT,GIT HUB,labs
+
+7.jest,cyprees,playwrite--testing-lib
+
+8.Agile development methodologies
+
+9.json web token(jwt), rest api, web RTC,WEB-PACK
+
+10.system design for front-end
+
+11.typescript --optional
+
+12.DSA-ALGO------------------
+   *Mid-level--dsa for good problems solving 
+
+
+
+----------------BACK-END----------------
+
+1.NODE.JS--LIB 1.EXP.JS,2NEXT AUTH.JS
+
+2.MONGODB DATA-BASE
+
+3.BACK-END SECURITY-RELATED 
+
+4.FULL-STACK-PROJECTS
+
+5.postapi , razor-pay
+
+
+-------------FULLSTACK------------------now---
+
+1.REACT.NATIVE--FOR CROSS MOBILE APP DEV
+
+2.DOVOPS---CI,CD,KUBERNET,GIT,AWS,TERRAFORM
+
+3.OTHER DATABASES
+
+-------------Block-chain----------------not-now---
+
+
+
+
+
+
+
